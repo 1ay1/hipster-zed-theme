@@ -32,7 +32,7 @@ Light:
 - **[Hipster Sage](screenshots/hipster-sage.png)**: soft sage paper with green ink
 - **[Hipster Paper](screenshots/hipster-paper.png)**: warm cream paper, like printed code
 
-Every variant except the original keeps text at 4.5:1 contrast or better. The original stays exact to the source scheme, so its purple and blue are a bit dimmer.
+Every variant except the original keeps text at 4.5:1 contrast or better, and gives keywords, functions, types, strings and numbers their own colors. The original stays exact to the source scheme, so its purple and blue are a bit dimmer.
 
 ## Editing the themes
 
@@ -41,6 +41,7 @@ All variants are generated from `scripts/gen.py`. Change a palette there and run
 ```sh
 python3 scripts/gen.py          # rewrites themes/hipster.json
 python3 scripts/gen.py --check  # contrast report only
+python3 scripts/distinct.py     # checks keywords, functions, types etc. look different
 python3 scripts/preview.py      # rebuilds screenshots/preview.png
 ```
 
