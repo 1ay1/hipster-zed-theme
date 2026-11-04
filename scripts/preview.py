@@ -7,25 +7,26 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SHOTS = os.path.join(ROOT, "screenshots")
 fam = json.load(open(os.path.join(ROOT, "themes", "hipster.json")))
 
-COLS, TW = 2, 980
+COLS, TW = 2, 700
+# crop of the TS pane in each full screenshot: code at 1:1 so it stays readable
+CROP = (1135, 100, 1135 + 700, 100 + 480)
 FONT = "/usr/share/fonts/TTF/JetBrainsMono-Bold.ttf"
 FONT2 = "/usr/share/fonts/TTF/JetBrainsMono-Regular.ttf"
 if not os.path.exists(FONT):
     import subprocess
     FONT = subprocess.check_output(["fc-match", "-f", "%{file}", "JetBrains Mono:bold"]).decode()
     FONT2 = subprocess.check_output(["fc-match", "-f", "%{file}", "JetBrains Mono"]).decode()
-big = ImageFont.truetype(FONT, 30)
-small = ImageFont.truetype(FONT2, 19)
+big = ImageFont.truetype(FONT, 26)
+small = ImageFont.truetype(FONT2, 17)
 
 BG = (10, 8, 4)
-PAD, GAP, LABEL = 56, 44, 64
+PAD, GAP, LABEL = 40, 36, 56
 
 themes = fam["themes"]
 tiles = []
 for t in themes:
     slug = t["name"].lower().replace(" ", "-")
-    im = Image.open(os.path.join(SHOTS, slug + ".png")).convert("RGB")
-    im = im.resize((TW, round(im.height * TW / im.width)), Image.LANCZOS)
+    im = Image.open(os.path.join(SHOTS, slug + ".png")).convert("RGB").crop(CROP)
     tiles.append((t, im))
 
 TH = tiles[0][1].height
