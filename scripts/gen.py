@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Builds themes/hipster-green.json from the palettes below.
+"""Builds themes/hipster.json from the palettes below.
 
 Run: python3 scripts/gen.py          (writes the theme)
      python3 scripts/gen.py --check  (contrast report only)
@@ -9,7 +9,7 @@ import os
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, "themes", "hipster-green.json")
+OUT = os.path.join(ROOT, "themes", "hipster.json")
 
 
 def rgb(h):
@@ -73,7 +73,7 @@ VARIANTS = [
               "#6c6c64", "#f05a5a", "#a3d86a", "#eee86a", "#8db8f0", "#eb9aeb", "#6ee8e8", "#ecece4"],
     ),
     dict(
-        name="Hipster Green Matrix", appearance="dark",
+        name="Hipster Matrix", appearance="dark",
         blurb="pure black, green only, like a phosphor CRT",
         bg="#000000", panel="#000000", raised="#071407", line="#041004",
         border="#0d2d0d", fg="#33e05a", bright="#7dff9a", muted="#3f8f50",
@@ -87,7 +87,7 @@ VARIANTS = [
               "#2f5a36", "#ff5c5c", "#33e05a", "#d8ff8c", "#5cd6b0", "#8cffa6", "#9effe0", "#d9ffe0"],
     ),
     dict(
-        name="Hipster Green Moss", appearance="dark",
+        name="Hipster Moss", appearance="dark",
         blurb="muted earthy greens, easy on the eyes for long sessions",
         bg="#151a12", panel="#11150e", raised="#1f261b", line="#1b2117",
         border="#2a3324", fg="#b4c79a", bright="#d6e8a8", muted="#7f8f6e",
@@ -101,7 +101,7 @@ VARIANTS = [
               "#4f5a45", "#e0837a", "#bcd98a", "#e8d38a", "#9bbfd4", "#d4a0bf", "#a3dcc6", "#e8ecdc"],
     ),
     dict(
-        name="Hipster Green Forest", appearance="dark",
+        name="Hipster Forest", appearance="dark",
         blurb="deep pine night with warm fruit accents",
         bg="#0f1813", panel="#0b130f", raised="#17241c", line="#142019",
         border="#1f3328", fg="#c3d6b8", bright="#b8f28a", muted="#7c9686",
@@ -115,7 +115,7 @@ VARIANTS = [
               "#46604f", "#f28c8c", "#bfeb8f", "#f7df99", "#9fcbe0", "#d6b3f0", "#9ee8d2", "#e8f2e2"],
     ),
     dict(
-        name="Hipster Green Midnight", appearance="dark",
+        name="Hipster Midnight", appearance="dark",
         blurb="blue-black night sky with neon green text",
         bg="#0b0f17", panel="#080b12", raised="#141a26", line="#111622",
         border="#1c2433", fg="#a6d97a", bright="#3dff6a", muted="#7381a0",
@@ -129,7 +129,7 @@ VARIANTS = [
               "#4a5570", "#ff8a96", "#3dff6a", "#ffdb8f", "#a0bfff", "#dbb0f5", "#a6e8ff", "#eef2fa"],
     ),
     dict(
-        name="Hipster Green Mint", appearance="dark",
+        name="Hipster Mint", appearance="dark",
         blurb="cool teal dark with mint text and pink pops",
         bg="#0d1716", panel="#0a1211", raised="#152321", line="#121e1d",
         border="#1d302e", fg="#b8e6d0", bright="#6dffc4", muted="#76968c",
@@ -141,6 +141,62 @@ VARIANTS = [
         error="#ff7a8a", warning="#ffd479", info="#5ce1c6", success="#a6e3a1",
         ansi=["#152321", "#ff7a8a", "#a6e3a1", "#ffd479", "#7ab8f0", "#ff8fb1", "#5ce1c6", "#b8e6d0",
               "#3f5c57", "#ff99a6", "#c0f0bb", "#ffe099", "#9ad8f0", "#ffadc8", "#8ff0dc", "#e6faf2"],
+    ),
+    dict(
+        name="Hipster Pink", appearance="dark",
+        blurb="neon pink, palette from the hipster-pink fork",
+        bg="#0b070a", panel="#080507", raised="#1a0e16", line="#150b12",
+        border="#2a1620", fg="#ff1493", bright="#ff8ad4", muted="#a3748c",
+        gutter="#8a5470", comment="#9c6c85", cursor="#fe019a", selection="#330a22",
+        keyword="#ff10f0", function="#ff5cb8", type="#ff77ff", string="#5de0e6",
+        number="#ff9ed2", constant="#ff9ed2", operator="#d98ab8", punct="#b07898",
+        property="#ffb3de", variable="#ffb3de", tag="#6ec1ff", attribute="#5de0e6",
+        builtin="#6ec1ff", escape="#ffd166", doc="#50c878", special="#8eecf0",
+        error="#ff3b6b", warning="#ffd166", info="#6ec1ff", success="#50c878",
+        ansi=["#1a0e16", "#ff3b6b", "#50c878", "#ffd166", "#6ec1ff", "#fe019a", "#5de0e6", "#bfbfbf",
+              "#666666", "#ff6a8f", "#7ee0a0", "#ffe199", "#9bd4ff", "#ff4db8", "#8eecf0", "#e5e5e5"],
+    ),
+    dict(
+        name="Hipster Purple", appearance="dark",
+        blurb="violet night with candy accents",
+        bg="#0d0914", panel="#0a0710", raised="#1a1426", line="#151021",
+        border="#2a2040", fg="#b58cff", bright="#d4b8ff", muted="#8a7aa8",
+        gutter="#6a5c88", comment="#8476a6", cursor="#c77dff", selection="#3a2466",
+        keyword="#ff79c6", function="#8be9fd", type="#f1fa8c", string="#a6e3a1",
+        number="#ffb86c", constant="#ffb86c", operator="#c3a6ff", punct="#9a88c0",
+        property="#d4b8ff", variable="#c9b0ff", tag="#ff79c6", attribute="#f1fa8c",
+        builtin="#8be9fd", escape="#ffb86c", doc="#9ab890", special="#8be9fd",
+        error="#ff5c7a", warning="#f1fa8c", info="#8be9fd", success="#a6e3a1",
+        ansi=["#1a1426", "#ff5c7a", "#a6e3a1", "#f1fa8c", "#8b9cff", "#c77dff", "#8be9fd", "#cfc6e6",
+              "#4a4066", "#ff7a93", "#c0f0bb", "#f6fcaa", "#a8b6ff", "#dba8ff", "#a8f0ff", "#f2eefc"],
+    ),
+    dict(
+        name="Hipster Blue", appearance="dark",
+        blurb="deep navy with electric blue text",
+        bg="#070b14", panel="#050810", raised="#111a2a", line="#0d1522",
+        border="#1a2840", fg="#5cb8ff", bright="#9ed6ff", muted="#6f8aac",
+        gutter="#4f6a8c", comment="#6884aa", cursor="#3da8ff", selection="#0f3360",
+        keyword="#c792ea", function="#5ce1e6", type="#ffd479", string="#7ee0a0",
+        number="#ff9e7a", constant="#ff9e7a", operator="#7fb4e0", punct="#6f90b4",
+        property="#9ed6ff", variable="#5cb8ff", tag="#ff8fb1", attribute="#ffd479",
+        builtin="#5ce1e6", escape="#ff9e7a", doc="#6fa890", special="#5ce1e6",
+        error="#ff6b7a", warning="#ffd479", info="#5ce1e6", success="#7ee0a0",
+        ansi=["#111a2a", "#ff6b7a", "#7ee0a0", "#ffd479", "#3da8ff", "#c792ea", "#5ce1e6", "#c0cfe0",
+              "#3f5270", "#ff8a96", "#a0f0bb", "#ffe099", "#7cc4ff", "#dbb0f5", "#9ef0f2", "#eef4fc"],
+    ),
+    dict(
+        name="Hipster Red", appearance="dark",
+        blurb="dark red room, warm coral text",
+        bg="#120707", panel="#0e0505", raised="#221010", line="#1c0c0c",
+        border="#3a1616", fg="#ff6b61", bright="#ff9a8a", muted="#a87470",
+        gutter="#8a5652", comment="#a46f6a", cursor="#ff3b30", selection="#4a1414",
+        keyword="#ffd479", function="#ff9a8a", type="#ffb86c", string="#e6c07a",
+        number="#ff8cc0", constant="#ff8cc0", operator="#d08c86", punct="#b07a76",
+        property="#ffb8ae", variable="#ff7f75", tag="#ffd479", attribute="#ffb86c",
+        builtin="#ffc8c0", escape="#ffe0a0", doc="#b88a7a", special="#ffc8c0",
+        error="#ff4060", warning="#ffd479", info="#ff9a8a", success="#c8d070",
+        ansi=["#221010", "#ff3b30", "#c8d070", "#ffd479", "#d88a80", "#ff8cc0", "#ffb0a6", "#e8cfcc",
+              "#5c3330", "#ff6a60", "#dce088", "#ffe099", "#f0a8a0", "#ff9cc8", "#ffd0c8", "#fff0ee"],
     ),
     dict(
         name="Hipster Amber", appearance="dark",
@@ -157,7 +213,7 @@ VARIANTS = [
               "#5c4528", "#ff7a52", "#ecd870", "#ffd27a", "#e0b07a", "#f0a878", "#ffe0a8", "#fff3dc"],
     ),
     dict(
-        name="Hipster Green Sage", appearance="light",
+        name="Hipster Sage", appearance="light",
         blurb="soft sage paper, green ink",
         bg="#eef2e6", panel="#e4eadb", raised="#dfe6d3", line="#e5ebdb",
         border="#cdd6bf", fg="#2f4022", bright="#2a8a12", muted="#5f6e52",
@@ -171,7 +227,7 @@ VARIANTS = [
               "#5f6e52", "#d9483a", "#3d9a24", "#b07e10", "#4070c0", "#a050b8", "#1a8a94", "#e4eadb"],
     ),
     dict(
-        name="Hipster Green Paper", appearance="light",
+        name="Hipster Paper", appearance="light",
         blurb="warm cream paper, like printed code",
         bg="#f8f4e8", panel="#efe9d9", raised="#ebe4d2", line="#f0ebdc",
         border="#ddd4bd", fg="#2b2a1f", bright="#3b8a12", muted="#6e6855",
@@ -414,7 +470,7 @@ if __name__ == "__main__":
         sys.exit(1 if bad else 0)
     family = {
         "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
-        "name": "Hipster Green",
+        "name": "Hipster",
         "author": "Ayush Bhat <tfeayush@gmail.com>",
         "themes": [build(v) for v in VARIANTS],
     }

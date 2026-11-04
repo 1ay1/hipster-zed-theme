@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SHOTS = os.path.join(ROOT, "screenshots")
-fam = json.load(open(os.path.join(ROOT, "themes", "hipster-green.json")))
+fam = json.load(open(os.path.join(ROOT, "themes", "hipster.json")))
 
 COLS, TW = 2, 980
 FONT = "/usr/share/fonts/TTF/JetBrainsMono-Bold.ttf"
