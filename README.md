@@ -10,41 +10,29 @@ In Zed, open the command palette, run `zed: extensions`, search for **Hipster** 
 
 ## Variants
 
+Click a name to see its full-size screenshot (shown with JetBrains Mono).
+
 Dark:
 
-- **Hipster Green Dark**: the original iTerm2/Tabby scheme, kept exact
-- **Hipster Green Soft**: same colors, but the dim purple and blue are brighter so they're easier to read
-- **Hipster Matrix**: pure black and only greens, like an old CRT
-- **Hipster Moss**: muted earthy greens for long sessions
-- **Hipster Forest**: deep pine background with warm fruit colors
-- **Hipster Midnight**: blue-black background with neon green text
-- **Hipster Mint**: teal dark with mint text and pink highlights
-- **Hipster Pink**: neon pink, palette from the [hipster-pink](https://github.com/physetersarealwayshigh/hipster-pink-zed-theme) fork
-- **Hipster Purple**: violet night with candy accents
-- **Hipster Blue**: deep navy with electric blue text
-- **Hipster Red**: dark red room with warm coral text
-- **Hipster Amber**: orange, like an old amber monitor
+- **[Hipster Green Dark](screenshots/hipster-green-dark.png)**: the original iTerm2/Tabby scheme, kept exact
+- **[Hipster Green Soft](screenshots/hipster-green-soft.png)**: same colors, but the dim purple and blue are brighter so they're easier to read
+- **[Hipster Matrix](screenshots/hipster-matrix.png)**: pure black and only greens, like an old CRT
+- **[Hipster Moss](screenshots/hipster-moss.png)**: muted earthy greens for long sessions
+- **[Hipster Forest](screenshots/hipster-forest.png)**: deep pine background with warm fruit colors
+- **[Hipster Midnight](screenshots/hipster-midnight.png)**: blue-black background with neon green text
+- **[Hipster Mint](screenshots/hipster-mint.png)**: teal dark with mint text and pink highlights
+- **[Hipster Pink](screenshots/hipster-pink.png)**: neon pink, palette from the [hipster-pink](https://github.com/physetersarealwayshigh/hipster-pink-zed-theme) fork
+- **[Hipster Purple](screenshots/hipster-purple.png)**: violet night with candy accents
+- **[Hipster Blue](screenshots/hipster-blue.png)**: deep navy with electric blue text
+- **[Hipster Red](screenshots/hipster-red.png)**: dark red room with warm coral text
+- **[Hipster Amber](screenshots/hipster-amber.png)**: orange, like an old amber monitor
 
 Light:
 
-- **Hipster Sage**: soft sage paper with green ink
-- **Hipster Paper**: warm cream paper, like printed code
+- **[Hipster Sage](screenshots/hipster-sage.png)**: soft sage paper with green ink
+- **[Hipster Paper](screenshots/hipster-paper.png)**: warm cream paper, like printed code
 
 Every variant except the original keeps text at 4.5:1 contrast or better. The original stays exact to the source scheme, so its purple and blue are a bit dimmer.
-
-## Screenshots
-
-| | |
-|---|---|
-| ![](screenshots/hipster-green-dark.png) | ![](screenshots/hipster-green-soft.png) |
-| ![](screenshots/hipster-matrix.png) | ![](screenshots/hipster-moss.png) |
-| ![](screenshots/hipster-forest.png) | ![](screenshots/hipster-midnight.png) |
-| ![](screenshots/hipster-mint.png) | ![](screenshots/hipster-pink.png) |
-| ![](screenshots/hipster-purple.png) | ![](screenshots/hipster-blue.png) |
-| ![](screenshots/hipster-red.png) | ![](screenshots/hipster-amber.png) |
-| ![](screenshots/hipster-sage.png) | ![](screenshots/hipster-paper.png) |
-
-Shown with JetBrains Mono.
 
 ## Editing the themes
 
