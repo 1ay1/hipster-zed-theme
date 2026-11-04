@@ -4,7 +4,7 @@ description = "14 bold terminal-style themes: the original Hipster Green from iT
 version = "1.1.0"
 schema_version = 1
 authors = ["Ayush Bhat <tfeayush@gmail.com>"]
-repository = "https://github.com/1ay1/hipster-green-zed-theme"
+repository = "https://github.com/1ay1/hipster-zed-theme"
 
 [theme]
 path = "themes/hipster.json"
